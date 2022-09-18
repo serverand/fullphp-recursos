@@ -1,0 +1,49 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-gap:10px;
+    font-family: sans-serif;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "esquerra"
+    "dreta"
+    "footer"
+    ;
+}
+
+main > * {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+@media (min-width: 500px){
+    main{
+        grid-template-areas: 
+        "header header header"
+        "esquerra contenido dreta"
+        "footer footer dreta"
+        ;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
+    }
+}
+
+header{
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: esquerra;
+}
+article {
+    grid-area: contenido;
+}
+aside:last-of-type{
+    grid-area: dreta;
+}
+footer{
+    grid-area: footer;
+}
+

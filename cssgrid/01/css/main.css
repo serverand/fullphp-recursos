@@ -1,0 +1,46 @@
+main > * {
+    background-color: goldenrod;
+    padding: 10px;
+    font-size: 3em;
+}
+
+main {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-areas:     
+    "header"
+    "esquerra"
+    "contingut"
+    "dreta"
+    "footer" 
+    ;
+}
+
+/* DESKTOP */
+@media (min-width: 600px){
+    main {
+        display:grid;
+        grid-gap: 10px;
+        grid-template-areas:     
+        "header header header"
+        "esquerra contingut dreta"
+        "footer footer ." 
+        ;
+    }
+}
+
+header{
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: esquerra;
+}
+article{
+    grid-area: contingut;
+}
+aside:last-of-type{
+    grid-area: dreta;
+}
+footer{
+    grid-area: footer;
+}

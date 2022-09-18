@@ -1,0 +1,13 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display:flex;
+    justify-content: space-evenly;
+    /*
+    flex-start - alinia inici
+    flex-end - alinia al final
+    center - alinia al centre
+    space-around - reparteix els espais mateix marge per tots
+    space-between - reparteix els espais entre els elements, sense espais al final i al principi
+    space-evenly - reparteix els espais entre els elements, també al inici i final
+    */
+  }

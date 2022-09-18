@@ -1,0 +1,22 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+
+  /*
+  flex: 1 1 0; 
+   ...es igual que... 
+  flex-grow: 1; 0 no creix mes anllà del basis, 1,2,3,4,... creix més que la resta
+  flex-shrink: 1; amplada minima (basis) si es igual a 0
+  flex-basis: 0; - amplada maxima
+  */
+
+
+  .home {
+    flex: 1 1 200px;
+  }
+  
+  .logout {
+    flex: 10 1 200px;
+  }
